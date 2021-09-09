@@ -1,14 +1,14 @@
 import Link from "next/link"
 import Layout from "components/layout"
 
-const Home: React.FC = () => {
+const Contact: React.FC = () => {
   return (
     <Layout>
-      <Link href="/about">
-        <a>About</a>
+      <Link href="/">
+        <a>TOP</a>
       </Link>
     </Layout>
   )
 }
 
-export default Home
+export default Contact
