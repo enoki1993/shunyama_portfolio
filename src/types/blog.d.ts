@@ -6,6 +6,16 @@ declare interface BlogContent {
 	revisedAt: string
 	title: string
 	body: string
+	category: Category[]
+}
+
+declare interface Category {
+	id: string
+	createdAt: string
+	updatedAt: string
+	publishedAt: string
+	revisedAt: string
+	name: string
 }
 
 declare interface BlogResponseData {

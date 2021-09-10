@@ -18,6 +18,9 @@ const BlogId = ({ blogContent }: Props ) => {
       <main>
         <h1>{blogContent.title}</h1>
         <p>{blogContent.publishedAt}</p>
+        <ul>
+          {blogContent.category.map(({ name }, index) => <li key={index}>{ name}</li>)}
+        </ul>
         <div
           dangerouslySetInnerHTML={{
             __html: `${blogContent.body}`,
