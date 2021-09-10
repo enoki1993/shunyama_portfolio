@@ -16,6 +16,8 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    env:
+      API_KEY: ${{ secrets.API_KEY }}
     steps:
       - uses: actions/checkout@v2
         with:
@@ -29,7 +31,6 @@ jobs:
         run: |
           npm install
           npm run build
-          echo "API_KEY=${{ secrets.API_KEY }}" >> .env
       - uses: amondnet/vercel-action@v20
         with:
           # GitHub Actions の Secrets で作成した値を参照する形で
