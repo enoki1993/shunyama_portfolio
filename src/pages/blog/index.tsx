@@ -1,10 +1,10 @@
-import Link from "next/link"
+import Link from 'next/link'
 import { GetStaticProps } from 'next'
-import { client } from 'libs/client'
-import Layout from "components/layout"
+import { client } from '~/libs/client'
+import Layout from '~/components/layout/layout'
 
 interface Props {
-	blogContents: BlogContent[]
+  blogContents: BlogContent[]
 }
 
 const Blog = ({ blogContents }: Props) => {
@@ -12,7 +12,7 @@ const Blog = ({ blogContents }: Props) => {
     <Layout>
       <div>
         <ul>
-          {blogContents.map(blogContent => (
+          {blogContents.map((blogContent) => (
             <li key={blogContent.id}>
               <Link href={`/blog/${blogContent.id}`}>
                 <a>{blogContent.title}</a>
@@ -31,7 +31,7 @@ const Blog = ({ blogContents }: Props) => {
 export default Blog
 
 export const getStaticProps: GetStaticProps = async () => {
-  const data = await client.get<BlogResponseData>({ endpoint: "blog" })
+  const data = await client.get<BlogResponseData>({ endpoint: 'blog' })
   return {
     props: {
       blogContents: data.contents,

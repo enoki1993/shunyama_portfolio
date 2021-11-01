@@ -1,10 +1,10 @@
-import Link from "next/link"
-import Layout from "components/layout"
+import Link from 'next/link'
+import Layout from '~/components/layout/layout'
 
-const Contact: React.FC = () => {
+const NotFound: React.FC = () => {
   return (
-		<Layout>
-			ページが存在しません。
+    <Layout>
+      ページが存在しません。
       <Link href="/">
         <a>TOP</a>
       </Link>
@@ -12,4 +12,4 @@ const Contact: React.FC = () => {
   )
 }
 
-export default Contact
+export default NotFound
