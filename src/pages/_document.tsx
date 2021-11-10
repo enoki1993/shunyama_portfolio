@@ -1,3 +1,4 @@
+import { extractCritical } from '@emotion/server'
 import Document, {
   Html,
   Head,
@@ -5,7 +6,6 @@ import Document, {
   NextScript,
   DocumentContext,
 } from 'next/document'
-import { extractCritical } from '@emotion/server'
 
 export default class MyDocument extends Document {
   static async getInitialProps(ctx: DocumentContext) {
@@ -29,7 +29,7 @@ export default class MyDocument extends Document {
 
   render() {
     return (
-      <Html lang="ja">
+      <Html lang='ja'>
         <Head />
         <body>
           <Main />

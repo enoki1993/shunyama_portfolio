@@ -1,13 +1,10 @@
-import Link from 'next/link'
-import Layout from '~/components/layout/layout'
+import Layout from '~/components/templates/single-column'
 
-const NotFound: React.FC = () => {
+const NotFound = () => {
   return (
     <Layout>
-      ページが存在しません。
-      <Link href="/">
-        <a>TOP</a>
-      </Link>
+      <h1>404 Not Found...</h1>
+      <p>ページが存在しません。</p>
     </Layout>
   )
 }

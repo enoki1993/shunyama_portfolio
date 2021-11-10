@@ -1,9 +1,9 @@
-import Link from 'next/link'
 import { GetStaticProps } from 'next'
-import { client } from '~/libs/client'
-import Layout from '~/components/layout/layout'
+import Link from 'next/link'
+import Layout from '~/components/templates/single-column'
+import { client } from '~/lib/client'
 
-interface Props {
+type Props = {
   blogContents: BlogContent[]
 }
 
@@ -21,9 +21,6 @@ const Blog = ({ blogContents }: Props) => {
           ))}
         </ul>
       </div>
-      <Link href="/">
-        <a>TOP</a>
-      </Link>
     </Layout>
   )
 }

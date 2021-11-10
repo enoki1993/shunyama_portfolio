@@ -1,7 +1,7 @@
+import { ParsedUrlQuery } from 'querystring'
 import { GetStaticProps, GetStaticPaths } from 'next'
-import { ParsedUrlQuery } from 'node:querystring'
-import { client } from '~/libs/client'
-import Layout from '~/components/layout/layout'
+import Layout from '~/components/templates/single-column'
+import { client } from '~/lib/client'
 
 interface Props {
   blogContent: BlogContent

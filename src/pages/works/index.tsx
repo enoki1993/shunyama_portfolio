@@ -1,12 +1,9 @@
-import Link from 'next/link'
-import Layout from '../../components/layout/layout'
+import Layout from '../../components/templates/single-column'
 
-const Works: React.FC = () => {
+const Works = () => {
   return (
     <Layout>
-      <Link href="/">
-        <a>TOP</a>
-      </Link>
+      <div></div>
     </Layout>
   )
 }
