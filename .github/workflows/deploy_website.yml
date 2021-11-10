@@ -17,6 +17,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     env:
+      SERVICE_DOMAIN: ${{ secrets.SERVICE_DOMAIN }}
       API_KEY: ${{ secrets.API_KEY }}
     steps:
       - uses: actions/checkout@v2
