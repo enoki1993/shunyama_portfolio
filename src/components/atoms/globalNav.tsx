@@ -12,74 +12,44 @@ type Props = {
 
 const GlobalNav = ({ openMenu }: Props) => {
   return (
-    <nav
-      css={
-        openMenu
-          ? css`
-              ${tw`block`}
-            `
-          : css`
-              ${tw`hidden md:block`}
-            `
-      }
-    >
-      <ul css={gNavInnerStyle}>
-        <li css={gNavItemStyle}>
-          <Link href='/#about'>
-            <a css={gNavItemLinkStyle}>
-              <AccountCircleOutlinedIcon
-                css={css`
-                  ${tw`mr-2 md:mr-0`}
-                `}
-              />
+    <nav css={nav(openMenu)}>
+      <ul css={list}>
+        <li css={item}>
+          <Link href='/#about' passHref={true}>
+            <a css={itemInner}>
+              <AccountCircleOutlinedIcon css={icon} />
               about
             </a>
           </Link>
         </li>
-        <li css={gNavItemStyle}>
-          <Link href='/#skill'>
-            <a css={gNavItemLinkStyle}>
-              <BuildOutlinedIcon
-                css={css`
-                  ${tw`mr-2 md:mr-0`}
-                `}
-              />
+        <li css={item}>
+          <Link href='/#skill' passHref={true}>
+            <a css={itemInner}>
+              <BuildOutlinedIcon css={icon} />
               skill
             </a>
           </Link>
         </li>
-        <li css={gNavItemStyle}>
-          <Link href='/works'>
-            <a css={gNavItemLinkStyle}>
-              <FilterOutlinedIcon
-                css={css`
-                  ${tw`mr-2 md:mr-0`}
-                `}
-              />
+        <li css={item}>
+          <Link href='/works' passHref={true}>
+            <a css={itemInner}>
+              <FilterOutlinedIcon css={icon} />
               works
             </a>
           </Link>
         </li>
-        <li css={gNavItemStyle}>
-          <Link href='/blog'>
-            <a css={gNavItemLinkStyle}>
-              <CreateOutlinedIcon
-                css={css`
-                  ${tw`mr-2 md:mr-0`}
-                `}
-              />
+        <li css={item}>
+          <Link href='/blog' passHref={true}>
+            <a css={itemInner}>
+              <CreateOutlinedIcon css={icon} />
               blog
             </a>
           </Link>
         </li>
         <li>
-          <Link href='/#contact'>
-            <a css={gNavItemLinkStyle}>
-              <ContactPageOutlinedIcon
-                css={css`
-                  ${tw`mr-2 md:mr-0`}
-                `}
-              />
+          <Link href='/#contact' passHref={true}>
+            <a css={itemInner}>
+              <ContactPageOutlinedIcon css={icon} />
               contact
             </a>
           </Link>
@@ -89,24 +59,41 @@ const GlobalNav = ({ openMenu }: Props) => {
   )
 }
 
-const gNavInnerStyle = css`
+const nav = (openMenu: boolean) => {
+  if (openMenu) {
+    return css`
+      ${tw`block`}
+    `
+  } else {
+    return css`
+      ${tw`hidden md:block`}
+    `
+  }
+}
+
+const list = css`
   ${tw`
-  md:flex md:justify-end
+  md:flex justify-end
 `}
 `
 
-const gNavItemStyle = css`
+const item = css`
   ${tw`
   border-b md:border-none
 `}
 `
 
-const gNavItemLinkStyle = css`
+const itemInner = css`
   ${tw`
-  block px-4 py-3 uppercase cursor-pointer transition-colors 
+  block px-8 py-3 uppercase cursor-pointer rounded transition-colors 
   md:flex flex-col items-center
-  hover:bg-gray-600 rounded
+  hover:bg-gray-600
+  focus:bg-gray-600 outline-none
 `}
+`
+
+const icon = css`
+  ${tw`mr-2 md:mr-0`}
 `
 
 export default GlobalNav

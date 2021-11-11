@@ -1,8 +1,8 @@
-import Link from 'next/link'
 import { useState } from 'react'
 import tw, { css } from 'twin.macro'
-import GlobalNav from '../atoms/globalNav'
-import ToggleBtn from '../atoms/toggleBtn'
+import GlobalNav from '~/components/atoms/globalNav'
+import Logo from '~/components/atoms/logo'
+import ToggleBtn from '~/components/atoms/toggleBtn'
 
 const Header = () => {
   // メニュー開閉状態の管理
@@ -12,33 +12,10 @@ const Header = () => {
   }
 
   return (
-    <header
-      id='header'
-      css={css`
-        ${tw`sticky top-0 z-50 py-2 text-white bg-gray-800`}
-      `}
-    >
-      <div
-        css={css`
-          ${tw`container mx-auto px-4`}
-        `}
-      >
-        <div
-          css={css`
-            ${tw`flex justify-between items-center`}
-          `}
-        >
-          <Link href='/'>
-            <a>
-              <h1
-                css={css`
-                  ${tw`md:text-xl`}
-                `}
-              >
-                Vannamei&rsquo;s Portfolio
-              </h1>
-            </a>
-          </Link>
+    <header id='header' css={header}>
+      <div css={container}>
+        <div css={inner}>
+          <Logo text='Shunyama&rsquo;s Portfolio' />
           <ToggleBtn openMenu={openMenu} handleClick={handleClick} />
         </div>
         <GlobalNav openMenu={openMenu} />
@@ -46,5 +23,17 @@ const Header = () => {
     </header>
   )
 }
+
+const header = css`
+  ${tw`sticky top-0 z-50 py-2 text-white bg-gray-800`}
+`
+
+const container = css`
+  ${tw`container mx-auto px-4`}
+`
+
+const inner = css`
+  ${tw`flex justify-between items-center`}
+`
 
 export default Header
