@@ -1,9 +1,12 @@
 import type { SerializedStyles } from '@emotion/react'
 
-export const getStyleByBool = (bool: boolean, styles: SerializedStyles[]) => {
+export const getStyleByBool = (
+  bool: boolean,
+  styles: { true: SerializedStyles; false: SerializedStyles }
+) => {
   if (bool) {
-    return styles[0]
+    return styles.true
   } else {
-    return styles[1]
+    return styles.false
   }
 }

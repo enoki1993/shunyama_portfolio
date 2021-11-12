@@ -1,21 +1,20 @@
 import tw, { css } from 'twin.macro'
-import SectionTitle from '~/components/atoms/sectionTitle'
 import ContactForm from '~/components/molecules/contactForm'
+import SectionHeader from '~/components/molecules/sectionHeader'
 
 const Contact = () => (
   <section id='#contact' css={section}>
-    <SectionTitle text='contact' />
-    <p css={p}>ご連絡の際はこちらのフォームよりお問い合わせください。</p>
+    <SectionHeader
+      en='contact'
+      title='お問い合わせ'
+      caption='ご連絡の際はこちらのフォームよりお問い合わせください。'
+    />
     <ContactForm />
   </section>
 )
 
 const section = css`
-  ${tw`py-10 bg-yellow-50`}
-`
-
-const p = css`
-  ${tw`mb-5 text-center`}
+  ${tw`py-10 bg-transparent`}
 `
 
 export default Contact

@@ -17,7 +17,7 @@ const Button = ({ href = '/', text = 'ボタン', _css }: Props) => (
 const base = css`
   ${tw`
   px-4 py-2 bg-gray-500 text-white shadow cursor-pointer transition-colors rounded
-  hover:bg-gray-400
+  hover:bg-opacity-80
 `}
 `
 

@@ -5,13 +5,13 @@ const Required = ({ isRequired }: { isRequired: boolean }) => (
   <span css={getStyleByBool(isRequired, required)}>※必須</span>
 )
 
-const required = [
-  css`
-    ${tw`text-red-400 ml-2`}
+const required = {
+  true: css`
+    ${tw`text-sm text-red-400 ml-2`}
   `,
-  css`
+  false: css`
     ${tw`hidden`}
   `,
-]
+}
 
 export default Required

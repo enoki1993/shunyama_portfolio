@@ -24,7 +24,7 @@ const Header = () => {
 }
 
 const header = css`
-  ${tw`sticky top-0 z-50 py-2 text-white bg-gray-800`}
+  ${tw`sticky top-0 z-50 py-2 text-white bg-gray-800 shadow-md`}
 `
 
 const container = css`

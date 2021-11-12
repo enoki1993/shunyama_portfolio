@@ -5,9 +5,10 @@ import CreateOutlinedIcon from '@mui/icons-material/CreateOutlined'
 import FilterOutlinedIcon from '@mui/icons-material/FilterOutlined'
 import tw, { css } from 'twin.macro'
 import NavLink from '~/components/atoms/navLink'
+import { getStyleByBool } from '~/utils/getStyle'
 
 const GlobalNav = ({ openMenu }: { openMenu: boolean }) => (
-  <nav css={nav(openMenu)}>
+  <nav css={getStyleByBool(openMenu, nav)}>
     <ul css={list}>
       <li css={item}>
         <NavLink
@@ -47,17 +48,13 @@ const GlobalNav = ({ openMenu }: { openMenu: boolean }) => (
     </ul>
   </nav>
 )
-
-const nav = (openMenu: boolean) => {
-  if (openMenu) {
-    return css`
-      ${tw`block`}
-    `
-  } else {
-    return css`
-      ${tw`hidden md:block`}
-    `
-  }
+const nav = {
+  true: css`
+    ${tw`block`}
+  `,
+  false: css`
+    ${tw`hidden md:block`}
+  `,
 }
 
 const list = css`

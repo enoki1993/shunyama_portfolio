@@ -1,17 +1,20 @@
-import tw, { css } from 'twin.macro'
-import Button from '~/components/atoms/button'
+import About from '~/components/organisms/about'
+import Blog from '~/components/organisms/blog'
 import Contact from '~/components/organisms/contact'
+import Hero from '~/components/organisms/hero'
+import Skill from '~/components/organisms/skill'
+import Works from '~/components/organisms/works'
 import Layout from '~/components/templates/single-column'
 
 const Home = () => (
   <Layout>
-    <Button href='/works' text='制作実績一覧' _css={worksBtn} />
+    <Hero />
+    <About />
+    <Skill />
+    <Works />
+    <Blog />
     <Contact />
   </Layout>
 )
-
-const worksBtn = css`
-  ${tw`bg-green-600 hover:bg-green-500`}
-`
 
 export default Home
