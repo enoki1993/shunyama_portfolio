@@ -1,11 +1,10 @@
 import { useState } from 'react'
 import tw, { css } from 'twin.macro'
-import GlobalNav from '~/components/atoms/globalNav'
 import Logo from '~/components/atoms/logo'
 import ToggleBtn from '~/components/atoms/toggleBtn'
+import GlobalNav from '~/components/molecules/globalNav'
 
 const Header = () => {
-  // メニュー開閉状態の管理
   const [openMenu, setOpenMenu] = useState(false)
   const handleClick = () => {
     setOpenMenu(!openMenu)

@@ -2,11 +2,7 @@ import { keyframes } from '@mui/styled-engine'
 import { css } from 'twin.macro'
 
 const ToggleBtn = ({ openMenu, handleClick }) => (
-  <button
-    css={btn}
-    onClick={() => handleClick()}
-    className={openMenu ? 'isOpen' : undefined}
-  >
+  <button css={btn} onClick={() => handleClick()}>
     <span css={[bar, openMenu && animation(barTransform)]}></span>
     <span css={[bar2, openMenu && animation(bar2Transform)]}></span>
     <p css={text}>{!openMenu ? 'Menu' : 'Close'}</p>

@@ -1,6 +1,6 @@
 import GoTopBtn from '~/components/atoms/goTopBtn'
-import Footer from '~/components/molecules/footer'
-import Header from '~/components/molecules/header'
+import Footer from '~/components/organisms/footer'
+import Header from '~/components/organisms/header'
 
 const Layout = ({ children }) => {
   return (
