@@ -15,16 +15,16 @@ const About = () => (
           />
         </div>
         <div css={textWrapper}>
-          <h3 css={heading}>山中 俊</h3>
+          <h3 css={heading}>ばなめい</h3>
           <p css={[text, mb]}>
             1993年新潟県新潟市生まれ。出身は福島県喜多方市。
             <br />
-            2017年に岩手大学を中退。その後DTP/Web
+            2017年に大学を中退し、その後DTP/Web
             デザイン系の職業訓練を経て、塾講師の傍ら独学でプログラミングを身に付ける。
             <br />
             フロントエンド全般とLaravelに興味があります。
           </p>
-          <p css={text}>趣味は自作PCとオンラインゲーム。</p>
+          <p css={text}>趣味は自作PCと競技プログラミング。</p>
         </div>
       </div>
     </div>

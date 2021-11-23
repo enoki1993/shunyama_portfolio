@@ -14,7 +14,7 @@ const Header = () => {
     <header id='header' css={header}>
       <div css={container}>
         <div css={inner}>
-          <Logo text='Shunyama&rsquo;s Portfolio' />
+          <Logo text='Vannamei&rsquo;s Portfolio' />
           <ToggleBtn openMenu={openMenu} handleClick={handleClick} />
         </div>
         <GlobalNav openMenu={openMenu} />

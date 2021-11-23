@@ -10,7 +10,7 @@ const Footer = () => (
       <div css={item}>なんとか</div> <div css={item}>かんとか</div>
     </div>
     <div css={copy}>
-      <small>©2021 Shun Yamanaka</small>
+      <small>©2021 Vannamei</small>
     </div>
   </footer>
 )
