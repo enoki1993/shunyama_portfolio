@@ -27,8 +27,8 @@ const About = () => (
           </p>
           <p css={text}>趣味は自作PCと競技プログラミング。</p>
           <a href='https://github.com/vannamei'>
-            <p>
-              <MarkGithubIcon size={24} />
+            <p css={github}>
+              <MarkGithubIcon size={24} css={githubIcon} />
               GitHub
             </p>
           </a>
@@ -68,6 +68,14 @@ const heading = css`
 
 const text = css`
   ${tw`text-gray-500 text-sm leading-7`}
+`
+
+const github = css`
+  ${tw`mt-4 inline-block transition-opacity hover:opacity-90`}
+`
+
+const githubIcon = css`
+  ${tw`mr-1`}
 `
 
 const mb = css`

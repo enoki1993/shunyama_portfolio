@@ -7,7 +7,7 @@ const Footer = () => (
       <div css={item}>
         <Logo text='Vannamei&rsquo;s Portfolio' />
       </div>
-      <div css={item}>なんとか</div> <div css={item}>かんとか</div>
+      <div css={item}>サイトマップ</div> <div css={item}>かんとか</div>
     </div>
     <div css={copy}>
       <small>©2021 Vannamei</small>

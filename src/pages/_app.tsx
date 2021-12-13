@@ -1,7 +1,7 @@
 import { Global } from '@emotion/react'
 import { AppProps } from 'next/app'
 import Head from 'next/head'
-import { GlobalStyles, css } from 'twin.macro'
+import tw, { GlobalStyles, css } from 'twin.macro'
 
 const MyApp = ({ Component, pageProps }: AppProps) => (
   <>

@@ -30,7 +30,7 @@ const heading = css`
 `
 
 const cap = css`
-  ${tw`max-w-screen-md text-gray-500 md:text-lg text-center mx-auto`}
+  ${tw`max-w-screen-md text-gray-500 mb-6 md:text-lg text-center mx-auto`}
 `
 
 export default SectionHeader

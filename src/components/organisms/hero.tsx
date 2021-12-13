@@ -4,9 +4,9 @@ const Hero = () => (
   <section id='hero' css={section}>
     <div css={inner}>
       <h2 css={siteDescription}>
-        福島県郡山市在住のWebエンジニア
+        福島県郡山市にてWeb開発の学習をしています。
         <br />
-        ばなめいのポートフォリオサイトです。
+        これまでに学んだ事や制作物を紹介します。
       </h2>
     </div>
   </section>
