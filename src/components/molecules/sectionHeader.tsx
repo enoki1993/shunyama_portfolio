@@ -17,7 +17,7 @@ const SectionHeader = ({
 )
 
 const enHeading = css`
-  ${tw`text-green-600 uppercase 
+  ${tw`text-purple-600 uppercase 
   md:mb-3 
   lg:text-lg font-semibold text-center mb-2
   `}

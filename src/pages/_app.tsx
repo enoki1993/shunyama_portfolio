@@ -22,6 +22,10 @@ const globalStyles = css`
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Ubuntu,
       Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    background-image: url('/img/bg.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: bottom;
   }
 
   a {

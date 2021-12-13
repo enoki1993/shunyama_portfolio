@@ -1,3 +1,4 @@
+import { MarkGithubIcon } from '@primer/octicons-react'
 import tw, { css } from 'twin.macro'
 import SectionHeader from '~/components/molecules/sectionHeader'
 
@@ -22,9 +23,15 @@ const About = () => (
             2017年に大学を中退し、その後DTP/Web
             デザイン系の職業訓練を経て、塾講師の傍ら独学でプログラミングを身に付ける。
             <br />
-            フロントエンド全般とLaravelに興味があります。
+            最近はJamstackとLaravelに興味があります。
           </p>
           <p css={text}>趣味は自作PCと競技プログラミング。</p>
+          <a href='https://github.com/vannamei'>
+            <p>
+              <MarkGithubIcon size={24} />
+              GitHub
+            </p>
+          </a>
         </div>
       </div>
     </div>
@@ -32,7 +39,7 @@ const About = () => (
 )
 
 const section = css`
-  ${tw`bg-white py-8 lg:py-12`}
+  ${tw`bg-purple-100 py-8 lg:py-12`}
 `
 
 const container = css`

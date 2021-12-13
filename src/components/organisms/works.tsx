@@ -26,7 +26,7 @@ const inner = css`
 `
 const button = css`
   ${tw`
-  bg-yellow-600 px-10
+  bg-pink-600 px-10
 `}
 `
 

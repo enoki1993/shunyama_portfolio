@@ -14,7 +14,7 @@ const Contact = () => (
 )
 
 const section = css`
-  ${tw`py-10 bg-transparent`}
+  ${tw`py-10`}
 `
 
 export default Contact

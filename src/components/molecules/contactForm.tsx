@@ -65,8 +65,8 @@ const submitWrapper = css`
 
 const submit = css`
   ${tw`
-  w-full px-4 py-2 bg-yellow-600 text-white font-bold shadow cursor-pointer transition-colors rounded
-  hover:bg-yellow-500
+  w-full px-4 py-2 bg-pink-600 text-white font-bold shadow cursor-pointer transition-colors rounded
+  hover:bg-pink-500
   md:w-3/5
 `}
 `

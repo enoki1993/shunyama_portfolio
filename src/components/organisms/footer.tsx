@@ -5,7 +5,7 @@ const Footer = () => (
   <footer id='footer' css={footer}>
     <div css={inner}>
       <div css={item}>
-        <Logo text='Shunyama&rsquo;s Portfolio' />
+        <Logo text='Vannamei&rsquo;s Portfolio' />
       </div>
       <div css={item}>なんとか</div> <div css={item}>かんとか</div>
     </div>

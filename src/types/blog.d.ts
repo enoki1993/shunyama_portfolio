@@ -1,4 +1,4 @@
-declare interface BlogContent {
+declare type BlogContent = {
   id: string
   createdAt: string
   updatedAt: string
@@ -9,7 +9,7 @@ declare interface BlogContent {
   category: Category[]
 }
 
-declare interface Category {
+declare type Category = {
   id: string
   createdAt: string
   updatedAt: string
@@ -18,7 +18,7 @@ declare interface Category {
   name: string
 }
 
-declare interface BlogResponseData {
+declare type BlogResponseData = {
   contents: BlogContent[]
   totalCount: number
   offset: number

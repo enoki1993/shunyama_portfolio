@@ -1,6 +1,6 @@
 import { GetStaticProps } from 'next'
 import Link from 'next/link'
-import Layout from '~/components/templates/single-column'
+import Layout from '~/components/templates/sidebar-right'
 import { client } from '~/lib/microcms-client'
 
 type Props = {

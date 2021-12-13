@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import tw, { css } from 'twin.macro'
 
 type Props = {
@@ -8,7 +9,9 @@ type Props = {
 
 const SkillItem = ({ img, name, desc }: Props) => (
   <div css={inner}>
-    <div css={imgWrapper}>{img}</div>
+    <div css={imgWrapper}>
+      <Image src={img} alt='' width='120' height='120' />
+    </div>
     <h3 css={skillName}>{name}</h3>
     <p css={description}>{desc}</p>
   </div>

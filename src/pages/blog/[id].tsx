@@ -1,6 +1,6 @@
 import { ParsedUrlQuery } from 'querystring'
 import { GetStaticProps, GetStaticPaths } from 'next'
-import Layout from '~/components/templates/single-column'
+import Layout from '~/components/templates/sidebar-right'
 import { client } from '~/lib/microcms-client'
 
 interface Props {
