@@ -21,11 +21,9 @@ const About = () => (
             1993年新潟県新潟市生まれ。出身は福島県喜多方市。
             <br />
             2017年に大学を中退し、その後DTP/Web
-            デザイン系の職業訓練を経て、塾講師の傍ら独学でプログラミングを身に付ける。
-            <br />
-            最近はJamstackとLaravelに興味があります。
+            デザイン系の職業訓練を経て、塾講師のアルバイトをしながらプログラミングの学習を続けていました。
           </p>
-          <p css={text}>趣味は自作PCと競技プログラミング。</p>
+          <p css={text}>趣味は自作PCとゲームで、最近はサイクリングもしています。</p>
           <a href='https://github.com/vannamei'>
             <p css={github}>
               <MarkGithubIcon size={24} css={githubIcon} />
