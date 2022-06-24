@@ -17,12 +17,12 @@ const section = css`
 `
 
 const inner = css`
-  ${tw`container mx-auto px-10 text-right
+  ${tw`container mx-auto px-10 text-center lg:text-right
 `}
 `
 
 const siteDescription = css`
-  ${tw`text-xl text-white
+  ${tw`lg:text-xl text-white
 `}
 `
 

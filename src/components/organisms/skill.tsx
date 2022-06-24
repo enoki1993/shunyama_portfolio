@@ -3,7 +3,7 @@ import SectionHeader from '~/components/molecules/sectionHeader'
 import SkillItem from '~/components/molecules/skillItem'
 
 const Skill = () => (
-  <section id='#skill' css={section}>
+  <section id='skill' css={section}>
     <div css={container}>
       <SectionHeader en='skill' title='スキル' />
       <div css={grid}>

@@ -7,7 +7,7 @@ type Props = {
   blogContents: BlogContent[]
 }
 
-const Blog = ({ blogContents }: Props) => {
+const Blog: React.FC<Props> = ({ blogContents }) => {
   return (
     <Layout>
       <div>

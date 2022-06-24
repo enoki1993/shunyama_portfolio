@@ -16,7 +16,7 @@ const Works = () => (
 )
 
 const section = css`
-  ${tw`py-10`}
+  ${tw`bg-purple-100 py-8 lg:py-12`}
 `
 
 const inner = css`

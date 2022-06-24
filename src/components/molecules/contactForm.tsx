@@ -1,58 +1,68 @@
+import React, { useState } from 'react'
 import tw, { css } from 'twin.macro'
 import TextInput from '~/components/molecules/textInput'
 import Textarea from '~/components/molecules/textarea'
 
-const ContactForm = () => (
-  <div css={wrapper}>
-    <form action='' method='post' css={form}>
-      <TextInput
-        text='お名前'
-        id='name'
-        type='name'
-        name='name'
-        isRequired={true}
-        _css={css`
-          ${tw`mb-4`}
-        `}
-      />
-      <TextInput
-        text='メールアドレス'
-        id='email'
-        type='email'
-        name='email'
-        isRequired={true}
-        _css={css`
-          ${tw`mb-4`}
-        `}
-      />
-      <TextInput
-        text='件名'
-        id='title'
-        type='text'
-        name='text'
-        _css={css`
-          ${tw`mb-4`}
-        `}
-      />
-      <Textarea
-        text='お問い合わせ内容'
-        id='contact'
-        isRequired={true}
-        _css={css`
-          ${tw`mb-6`}
-        `}
-      />
-      <div css={submitWrapper}>
-        <button type='submit' css={submit}>
-          送信する
-        </button>
-      </div>
-    </form>
-  </div>
-)
+type FormData = {
+  name: string
+  email: string
+  title: string
+  content: string
+}
+
+const ContactForm = () => {
+  return (
+    <div css={wrapper}>
+      <form>
+        <TextInput
+          text='お名前'
+          id='name'
+          type='name'
+          name='name'
+          isRequired={true}
+          _css={css`
+            ${tw`mb-4`}
+          `}
+        />
+        <TextInput
+          text='メールアドレス'
+          id='email'
+          type='email'
+          name='email'
+          isRequired={true}
+          _css={css`
+            ${tw`mb-4`}
+          `}
+        />
+        <TextInput
+          text='件名'
+          id='title'
+          type='text'
+          name='text'
+          _css={css`
+            ${tw`mb-4`}
+          `}
+        />
+        <Textarea
+          text='お問い合わせ内容'
+          id='contact'
+          isRequired={true}
+          _css={css`
+            ${tw`mb-6`}
+          `}
+        />
+        <div css={submitWrapper}>
+          <button type='submit' css={submit}>
+            送信する
+          </button>
+        </div>
+      </form>
+    </div>
+  )
+}
 
 const wrapper = css`
-  ${tw`max-w-xl mx-auto bg-white shadow-md rounded`}
+  ${tw`max-w-xl mx-auto p-6 bg-white shadow-md rounded`}
 `
 
 const form = css`

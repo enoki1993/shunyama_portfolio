@@ -25,13 +25,10 @@ const inner = css`
 `}
 `
 
-const p = css`
-  ${tw`mb-5`}
-`
-
 const button = css`
   ${tw`
   bg-pink-600 px-10
 `}
 `
+
 export default Blog

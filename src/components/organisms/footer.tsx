@@ -3,12 +3,6 @@ import Logo from '~/components/atoms/logo'
 
 const Footer = () => (
   <footer id='footer' css={footer}>
-    <div css={inner}>
-      <div css={item}>
-        <Logo text='Vannamei&rsquo;s Portfolio' />
-      </div>
-      <div css={item}>サイトマップ</div> <div css={item}>かんとか</div>
-    </div>
     <div css={copy}>
       <small>©2021 Vannamei</small>
     </div>
@@ -16,15 +10,7 @@ const Footer = () => (
 )
 
 const footer = css`
-  ${tw``}
-`
-
-const inner = css`
-  ${tw`container mx-auto flex justify-between px-4 border`}
-`
-
-const item = css`
-  ${tw`flex-1 border-red-400 border`}
+  ${tw`bg-gray-300`}
 `
 
 const copy = css`

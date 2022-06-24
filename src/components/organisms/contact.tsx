@@ -8,6 +8,7 @@ const Contact = () => (
       en='contact'
       title='お問い合わせ'
       caption='ご連絡の際はこちらのフォームよりお問い合わせください。'
+      isAlt={true}
     />
     <ContactForm />
   </section>
